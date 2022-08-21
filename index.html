@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lang='en'> 
+    <head>
+       <meta charset="UTF-8">
+       <link rel="stylesheet"href="style.css">
+       <title> Who Will Get the M.E.M.E ?</title>
+    </head>
+    <body>
+        <main>
+            <section class="content">
+                <h2> Output </h2>
+                <h3> Memes </h3>
+                <div class ="memes-content"></div>
+                <h3> Songs </h3>
+                <div class="songs-container play">
+                    <div class='song-info'> 
+                        <h4 id='title'>Behind Blue Eyes</h4>
+                    </div>
+                    <audio src='songs/behindblueeyes.mp3' id="audio"></audio>
+                    <div class="navigation">
+                        <button id="prev"class="action-btn">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button id="play"class="action-btn|action-btn-big">
+                            <i class= "fas fa-play"></i>
+                        </button>
+                        <button id="next"class="action-btn">
+                            <i class= "fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="sidebar">
+                <h2>Actions</h2>
+                <button onclick="showMeme()">Show a Meme</button>
+                <button onclick="playSong()">Play a Song</button>
+            </section>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>
